@@ -173,6 +173,23 @@ mod tests {
         println!("{:?}", <Faker as Internet>::user_agent());
     }
 
+	#[test]
+	fn file_name_usage() {
+		println!("{:?}", <Faker as FileName>::name());
+		println!("{:?}", <Faker as FileName>::archive_name());
+		println!("{:?}", <Faker as FileName>::image_name());
+		println!("{:?}", <Faker as FileName>::audio_name());
+		println!("{:?}", <Faker as FileName>::video_name());
+		println!("{:?}", <Faker as FileName>::document_name());
+
+		println!("{:?}", <Faker as FileName>::extension());
+		println!("{:?}", <Faker as FileName>::archive_extension());
+		println!("{:?}", <Faker as FileName>::image_extension());
+		println!("{:?}", <Faker as FileName>::audio_extension());
+		println!("{:?}", <Faker as FileName>::video_extension());
+		println!("{:?}", <Faker as FileName>::document_extension());
+	}
+
     #[test]
     fn company_usage() {
         println!("{:?}", <Faker as Company>::suffix());

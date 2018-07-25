@@ -4,6 +4,7 @@ mod company;
 #[cfg(feature = "http")]
 mod http;
 mod internet;
+mod file_name;
 mod lorem;
 mod name;
 mod number;
@@ -17,6 +18,7 @@ pub use self::company::Company;
 #[cfg(feature = "http")]
 pub use self::http::Http;
 pub use self::internet::Internet;
+pub use self::file_name::FileName;
 pub use self::lorem::Lorem;
 pub use self::name::Name;
 pub use self::number::Number;
